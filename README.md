@@ -126,8 +126,8 @@ def get_iter_combinations( number ):
  ```
   
 ## 3.Complexity
+### Time complexity	:
+![equation](https://wikimedia.org/api/rest_v1/media/math/render/svg/ad6f2ee2849ed0f6ec395e68f6c28f83f36a6307)
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-
-Time complexity	{\displaystyle \mathrm {O} ((n\cdot \log \log(n))}{\displaystyle \mathrm {O} ((n\cdot \log \log(n))}
+{\displaystyle \mathrm {O} ((n\cdot \log \log(n))}{\displaystyle \mathrm {O} ((n\cdot \log \log(n))}
 memory complexity	{\displaystyle \mathrm {O} (n)}\mathrm{O} (n)
