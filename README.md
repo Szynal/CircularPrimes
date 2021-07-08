@@ -64,5 +64,23 @@ def sieve_of_eratosthenes( number ):
  https://www.kite.com/python/docs/itertools.combinations
  Return r length subsequences of elements from the input iterable.
 
+ JEDNAK TO NIE TO..
+
+
+   ```python
+def get_iter_combinations( number ):
+    str_nr = list(str(number))
+    numbers = []
+    for i in range(len(str_nr)):
+        str_nr.append(str_nr.pop(str_nr.index(str_nr[0])))
+        a = ''.join(str_nr)
+        print(str_nr)
+        numbers.append(a)
+    print(numbers)
+
+ ```
+
+Na razie problem z zamianą zer i liczb typu [1,1,1]
+
 
 
