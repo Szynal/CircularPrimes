@@ -124,3 +124,8 @@ def get_iter_combinations( number ):
     return numbers
 
  ```
+  
+## 3.Complexity
+
+Time complexity	{\displaystyle \mathrm {O} ((n\cdot \log \log(n))}{\displaystyle \mathrm {O} ((n\cdot \log \log(n))}
+memory complexity	{\displaystyle \mathrm {O} (n)}\mathrm{O} (n)
