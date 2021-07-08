@@ -15,7 +15,7 @@ The number, 197, is called a circular prime because all rotations of the digits:
 
 ##  Getting started
 
-1. Find prime numbers (classic academic problem) 
+### 1. Find prime numbers (classic academic problem) 
 
   Sieve of Eratosthenes -> "In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit."
 
@@ -39,6 +39,7 @@ algorithm Sieve of Eratosthenes is
 
     return all i such that A[i] is true.
  ```
+ Code ind python
  
    ```python
 def sieve_of_eratosthenes( number ):
@@ -56,3 +57,6 @@ def sieve_of_eratosthenes( number ):
             print(p)
 
  ```
+ ### 2. Number variation without repetition (Wariacja bez powtórzeń [PL])
+
+
