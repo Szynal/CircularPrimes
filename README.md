@@ -24,7 +24,7 @@ The number, 197, is called a circular prime because all rotations of the digits:
 
  Pseudocode:
  
-  ```python
+  ```
 algorithm Sieve of Eratosthenes is
     input: an integer n > 1.
     output: all prime numbers from 2 through n.
@@ -38,4 +38,21 @@ algorithm Sieve of Eratosthenes is
                 A[j] := false
 
     return all i such that A[i] is true.
+ ```
+ 
+   ```python
+def sieve_of_eratosthenes( number ):
+    prime = [True for i in range(number + 1)]
+    p = 2
+    while p * p <= number:
+        if prime[p]:
+            for i in range(p * 2, number + 1, p):
+                prime[i] = False
+        p += 1
+    prime[0] = False
+    prime[1] = False
+    for p in range(number + 1):
+        if prime[p]:
+            print(p)
+
  ```
