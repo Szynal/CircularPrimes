@@ -58,5 +58,11 @@ def sieve_of_eratosthenes( number ):
 
  ```
  ### 2. Number variation without repetition (Wariacja bez powtórzeń [PL])
+ 
+ itertools.combinations is what I need...
+ 
+ https://www.kite.com/python/docs/itertools.combinations
+ Return r length subsequences of elements from the input iterable.
+
 
 
