@@ -1,16 +1,20 @@
 # This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def sieve_of_eratosthenes( number ):
+    prime = [True for i in range(number + 1)]
+    p = 2
+    while p * p <= number:
+        if prime[p]:
+            for i in range(p * 2, number + 1, p):
+                prime[i] = False
+        p += 1
+    prime[0] = False
+    prime[1] = False
+    for p in range(number + 1):
+        if prime[p]:
+            print(p)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    n = 30
+    sieve_of_eratosthenes(n)
