@@ -22,24 +22,7 @@ The number, 197, is called a circular prime because all rotations of the digits:
   https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 
 
- Pseudocode:
- 
-  ```
-algorithm Sieve of Eratosthenes is
-    input: an integer n > 1.
-    output: all prime numbers from 2 through n.
-
-    let A be an array of Boolean values, indexed by integers 2 to n,
-    initially all set to true.
-    
-    for i = 2, 3, 4, ..., not exceeding √n do
-        if A[i] is true
-            for j = i2, i2+i, i2+2i, i2+3i, ..., not exceeding n do
-                A[j] := false
-
-    return all i such that A[i] is true.
- ```
- Code ind python
+ Code in python
  
    ```python
 def sieve_of_eratosthenes( number ):
@@ -64,7 +47,7 @@ def sieve_of_eratosthenes( number ):
  https://www.kite.com/python/docs/itertools.combinations
  Return r length subsequences of elements from the input iterable.
 
- JEDNAK TO NIE TO..
+ this solution caused all permutations and we just needed to rearrange the numbers..
 
 
    ```python
@@ -79,10 +62,9 @@ def get_iter_combinations( number ):
     print(numbers)
 
  ```
+This solution ignores zeros and repetitions. For example: 111 or 700 -> 070, 007
 
-Na razie problem z zamianą zer i liczb typu [1,1,1]
-
- ### 2.Solution
+### 2. Full Solution
 
 
    ```python
