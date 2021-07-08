@@ -129,4 +129,4 @@ def get_iter_combinations( number ):
 ### Time complexity	:
 O((n * log * log(n))
 ### Memory complexity	:
-O(m)
+O(n)
